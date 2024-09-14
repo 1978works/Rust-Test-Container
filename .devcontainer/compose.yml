@@ -1,0 +1,14 @@
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Rust-Container
+
+    # カレントディレクトリをコンテナの「rust-docker」フォルダへマウント
+    volumes:
+      - .:/rust-docker-ws
+    # Dockerfileで定義されたWORKDIRの設定を上書き
+    # working_dir: /working_dir
+  
+    tty: true

@@ -1,0 +1,17 @@
+{
+    "name": "RUST CONTAINER",
+    "dockerComposeFile": "compose.yml",
+    "service": "rust",
+    "workspaceFolder": "/rust-docker-ws",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml",
+                "fill-labs.dependi",
+                "vadimcn.vscode-lldb",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
